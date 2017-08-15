@@ -13,7 +13,7 @@
 		8ED919451F3AE26600DCBD0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED919431F3AE26600DCBD0F /* Main.storyboard */; };
 		8ED919471F3AE26600DCBD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED919461F3AE26600DCBD0F /* Assets.xcassets */; };
 		8ED9194A1F3AE26600DCBD0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED919481F3AE26600DCBD0F /* LaunchScreen.storyboard */; };
-		8ED919531F3B02AD00DCBD0F /* HqTVLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED919521F3B02AD00DCBD0F /* HqTVLParse.m */; };
+		8ED919531F3B02AD00DCBD0F /* HqTLVParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED919521F3B02AD00DCBD0F /* HqTLVParse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		8ED919461F3AE26600DCBD0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ED919491F3AE26600DCBD0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ED9194B1F3AE26600DCBD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8ED919511F3B02AD00DCBD0F /* HqTVLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqTVLParse.h; sourceTree = "<group>"; };
-		8ED919521F3B02AD00DCBD0F /* HqTVLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqTVLParse.m; sourceTree = "<group>"; };
+		8ED919511F3B02AD00DCBD0F /* HqTLVParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqTLVParse.h; sourceTree = "<group>"; };
+		8ED919521F3B02AD00DCBD0F /* HqTLVParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqTLVParse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,8 @@
 				8ED9193E1F3AE26600DCBD0F /* AppDelegate.m */,
 				8ED919401F3AE26600DCBD0F /* ViewController.h */,
 				8ED919411F3AE26600DCBD0F /* ViewController.m */,
-				8ED919511F3B02AD00DCBD0F /* HqTVLParse.h */,
-				8ED919521F3B02AD00DCBD0F /* HqTVLParse.m */,
+				8ED919511F3B02AD00DCBD0F /* HqTLVParse.h */,
+				8ED919521F3B02AD00DCBD0F /* HqTLVParse.m */,
 				8ED919431F3AE26600DCBD0F /* Main.storyboard */,
 				8ED919461F3AE26600DCBD0F /* Assets.xcassets */,
 				8ED919481F3AE26600DCBD0F /* LaunchScreen.storyboard */,
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED919421F3AE26600DCBD0F /* ViewController.m in Sources */,
-				8ED919531F3B02AD00DCBD0F /* HqTVLParse.m in Sources */,
+				8ED919531F3B02AD00DCBD0F /* HqTLVParse.m in Sources */,
 				8ED9193F1F3AE26600DCBD0F /* AppDelegate.m in Sources */,
 				8ED9193C1F3AE26600DCBD0F /* main.m in Sources */,
 			);

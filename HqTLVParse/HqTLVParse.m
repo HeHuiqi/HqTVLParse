@@ -1,14 +1,14 @@
 //
-//  HqTVLParse.m
+//  HqTLVParse.m
 //  HqTLVParse
 //
 //  Created by macpro on 2017/8/9.
 //  Copyright © 2017年 macpro. All rights reserved.
 //
 
-#import "HqTVLParse.h"
+#import "HqTLVParse.h"
 
-@implementation HqTVLParse
+@implementation HqTLVParse
 
 - (instancetype)init{
     if (self = [super init]) {
@@ -16,23 +16,23 @@
     }
     return self;
 }
-- (NSDictionary<NSString *,HqTVLParse *> *)parseMutilTVLStrToDic:(NSString *)tlvstr{
+- (NSDictionary<NSString *,HqTLVParse *> *)parseMutilTVLStrToDic:(NSString *)tlvstr{
     
     NSMutableDictionary *tlvs = [[NSMutableDictionary alloc]initWithCapacity:0];
     while (tlvstr.length>0) {
-        HqTVLParse *parse = [self parseTLVStr:tlvstr];
+        HqTLVParse *parse = [self parseTLVStr:tlvstr];
         tlvstr = [tlvstr substringFromIndex:parse.tlvLength];
         tlvs[parse.tag] = parse;
     }
     return tlvs;
     
 }
-- (NSArray *)parseMutilTVLStrToArray:(NSString *)tlvstr{
+- (NSArray<HqTLVParse *> *)parseMutilTVLStrToArray:(NSString *)tlvstr{
     
     NSMutableArray *tlvs = [NSMutableArray arrayWithCapacity:0];
     
     while (tlvstr.length>0) {
-        HqTVLParse *parse = [self parseTLVStr:tlvstr];
+        HqTLVParse *parse = [self parseTLVStr:tlvstr];
         tlvstr = [tlvstr substringFromIndex:parse.tlvLength];
         [tlvs addObject:parse];
     }
@@ -88,7 +88,7 @@
     NSUInteger dataStrLength = [self hexStrTolong:dataStrLengthStr];
     NSString *dataStrValue = [dataStr substringWithRange:NSMakeRange(tagLength+dataStrLengthStr.length, dataStrLength*2)];
     tlvLength = tag.length+dataStrLengthStr.length+dataStrValue.length;
-    HqTVLParse *parse = [[HqTVLParse alloc]init];
+    HqTLVParse *parse = [[HqTLVParse alloc]init];
     parse.tag = tag;
     parse.length = dataStrLength;
     parse.value = dataStrValue;

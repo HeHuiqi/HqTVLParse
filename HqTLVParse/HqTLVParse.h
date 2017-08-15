@@ -1,5 +1,5 @@
 //
-//  HqTVLParse.h
+//  HqTLVParse.h
 //  HqTLVParse
 //
 //  Created by macpro on 2017/8/9.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HqTVLParse : NSObject
+@interface HqTLVParse : NSObject
 
 @property (nonatomic,assign) NSUInteger tlvLength;
 @property (nonatomic,copy) NSString *tag;
@@ -16,13 +16,13 @@
 @property (nonatomic,copy) NSString *value;
 
 //解析多个个tlv组成的字符串返回字典
-- (NSDictionary<NSString *,HqTVLParse *> *)parseMutilTVLStrToDic:(NSString *)tlvstr;
+- (NSDictionary<NSString *,HqTLVParse *> *)parseMutilTVLStrToDic:(NSString *)tlvstr;
 
 //解析多个个tlv组成的字符串数组
-- (NSArray<HqTVLParse *> *)parseMutilTVLStrToArray:(NSString *)tlvstr;
+- (NSArray<HqTLVParse *> *)parseMutilTVLStrToArray:(NSString *)tlvstr;
 
 
 //解析一个tlv字符串
-- (HqTVLParse *)parseTLVStr:(NSString *)dataStr;
+- (HqTLVParse *)parseTLVStr:(NSString *)dataStr;
 
 @end
