@@ -63,22 +63,12 @@
     }
     
     //四位tag
-    if ([tag isEqualToString:@"9F"]) {
+    if ([tag isEqualToString:@"9F"]||
+        [tag isEqualToString:@"01"]) {
         NSString *lTag = [dataStr substringWithRange:NSMakeRange(tagLength, 2)];
-        tag = [dataStr substringToIndex:tagLength*2];
-        if ([lTag isEqualToString:@"70"]) {
-            tagLength = 4;
-            tag = [dataStr substringWithRange:NSMakeRange(0, tagLength)];
-        }
-        dataStrLengthStr = [dataStr substringWithRange:NSMakeRange(tagLength, 2)];
-        
-    }
-    
-    //四位tag
-    if ([tag isEqualToString:@"01"]) {
-        NSString *lTag = [dataStr substringWithRange:NSMakeRange(tagLength, 2)];
-        tag = [dataStr substringToIndex:tagLength*2];
-        if ([lTag isEqualToString:@"0A"]) {
+        tag = [dataStr substringToIndex:tagLength];
+        if ([lTag isEqualToString:@"70"]||
+            [lTag isEqualToString:@"0A"]) {
             tagLength = 4;
             tag = [dataStr substringWithRange:NSMakeRange(0, tagLength)];
         }
