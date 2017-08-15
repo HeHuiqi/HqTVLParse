@@ -110,6 +110,6 @@
 
 - (NSString *)description{
     
-    return [NSString stringWithFormat:@"HqTVLParse=[tag=%@,length=%@,v=%@,tlvlength=%@]",self.tag,@(self.length),self.value,@(self.tlvLength)];
+    return [NSString stringWithFormat:@"HqTLVParse=[tag=%@,length=%@,v=%@,tlvlength=%@]",self.tag,@(self.length),self.value,@(self.tlvLength)];
 }
 @end
