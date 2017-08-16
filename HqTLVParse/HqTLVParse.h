@@ -10,9 +10,9 @@
 
 @interface HqTLVParse : NSObject
 
-@property (nonatomic,assign) NSUInteger tlvLength;
+@property (nonatomic,assign) NSUInteger tlvLength;//一个tlv格式字符串的长度
 @property (nonatomic,copy) NSString *tag;
-@property (nonatomic,assign) NSUInteger length;
+@property (nonatomic,assign) NSUInteger length;//vlue的长度
 @property (nonatomic,copy) NSString *value;
 
 //解析多个个tlv组成的字符串返回字典
