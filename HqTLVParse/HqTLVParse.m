@@ -20,9 +20,14 @@
     
     NSMutableDictionary *tlvs = [[NSMutableDictionary alloc]initWithCapacity:0];
     while (tlvstr.length>0) {
+        NSLog(@"tlvstr == %@",tlvstr);
         HqTLVParse *parse = [self parseTLVStr:tlvstr];
         tlvstr = [tlvstr substringFromIndex:parse.tlvLength];
-        tlvs[parse.tag] = parse;
+        if (parse) {
+            tlvs[parse.tag] = parse;
+        }else{
+            break;
+        }
     }
     return tlvs;
     
@@ -32,9 +37,15 @@
     NSMutableArray *tlvs = [NSMutableArray arrayWithCapacity:0];
     
     while (tlvstr.length>0) {
+        NSLog(@"tlvstr == %@",tlvstr);
+        
         HqTLVParse *parse = [self parseTLVStr:tlvstr];
         tlvstr = [tlvstr substringFromIndex:parse.tlvLength];
-        [tlvs addObject:parse];
+        if (parse) {
+            [tlvs addObject:parse];
+        }else{
+            break;
+        }
     }
     
     return tlvs;
@@ -43,7 +54,7 @@
 // 可添加自己设置的tag值即可解析
 - (id)parseTLVStr:(NSString *)dataStr{
     
-//    一个TLV格式的字符长度至少为6 比如 4F(t) 01(l) 88(v)
+    //    一个TLV格式的字符长度至少为6 比如 4F(t) 01(l) 88(v)
     if (dataStr.length<6) {
         return nil;
     }
@@ -58,7 +69,7 @@
     
     //两位tag
     NSString *tag = [dataStr substringWithRange:NSMakeRange(0, tagLength)];
-   
+    
     //默认为两位tag，所以仅处理4位tag的情况，其他情况自行处理
     if ([tag isEqualToString:@"9F"]||
         [tag isEqualToString:@"01"]) {
@@ -74,14 +85,15 @@
     
     //处理完要再次取tag值
     tag = [dataStr substringWithRange:NSMakeRange(0, tagLength)];
-
+    
     //数据长度字符串
     dataStrLengthStr = [dataStr substringWithRange:NSMakeRange(tagLength, 2)];
-
+    
     //数据长度要乘以2才是数据真正的长度
     NSUInteger dataStrLength = [self hexStrTolong:dataStrLengthStr]*2;
     NSString *dataStrValue = [dataStr substringWithRange:NSMakeRange(tagLength+dataStrLengthStr.length, dataStrLength)];
     tlvLength = tag.length+dataStrLengthStr.length+dataStrValue.length;
+    
     HqTLVParse *parse = [[HqTLVParse alloc]init];
     parse.tag = tag;
     parse.length = dataStrLength;
