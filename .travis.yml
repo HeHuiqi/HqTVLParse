@@ -1,3 +1,5 @@
 languge: objective-c
 xcode_project: HqTLVParse.xcodeproj
 xcode_scheme: HqTLVParse
+os: osx
+osx_image: xcode10.1
