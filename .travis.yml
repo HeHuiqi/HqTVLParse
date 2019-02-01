@@ -1,5 +1,6 @@
-languge: objective-c
-xcode_project: HqTLVParse.xcodeproj
-xcode_scheme: HqTLVParse
+language: objective-c
+xcode_project: HqTLVParse.xcodeproj # path to your xcodeproj folder
+xcode_scheme: HqTLVParsetTests
+xcode_destination: platform=iOS Simulator,OS=10.1,name=iPad Pro (9.7-inch)
 os: osx
 osx_image: xcode10.1

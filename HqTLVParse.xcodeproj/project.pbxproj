@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1593B3B622042E8A00626F4F /* HqTLVParseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1593B3B522042E8A00626F4F /* HqTLVParseTests.m */; };
 		8ED9193C1F3AE26600DCBD0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9193B1F3AE26600DCBD0F /* main.m */; };
 		8ED9193F1F3AE26600DCBD0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9193E1F3AE26600DCBD0F /* AppDelegate.m */; };
 		8ED919421F3AE26600DCBD0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED919411F3AE26600DCBD0F /* ViewController.m */; };
@@ -16,7 +17,20 @@
 		8ED919531F3B02AD00DCBD0F /* HqTLVParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED919521F3B02AD00DCBD0F /* HqTLVParse.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1593B3B822042E8A00626F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ED9192F1F3AE26600DCBD0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ED919361F3AE26600DCBD0F;
+			remoteInfo = HqTLVParse;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1593B3B322042E8A00626F4F /* HqTLVParseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HqTLVParseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1593B3B522042E8A00626F4F /* HqTLVParseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqTLVParseTests.m; sourceTree = "<group>"; };
+		1593B3B722042E8A00626F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED919371F3AE26600DCBD0F /* HqTLVParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HqTLVParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED9193B1F3AE26600DCBD0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8ED9193D1F3AE26600DCBD0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +46,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1593B3B022042E8A00626F4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8ED919341F3AE26600DCBD0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +63,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1593B3B422042E8A00626F4F /* HqTLVParseTests */ = {
+			isa = PBXGroup;
+			children = (
+				1593B3B522042E8A00626F4F /* HqTLVParseTests.m */,
+				1593B3B722042E8A00626F4F /* Info.plist */,
+			);
+			path = HqTLVParseTests;
+			sourceTree = "<group>";
+		};
 		8ED9192E1F3AE26600DCBD0F = {
 			isa = PBXGroup;
 			children = (
 				8ED919391F3AE26600DCBD0F /* HqTLVParse */,
+				1593B3B422042E8A00626F4F /* HqTLVParseTests */,
 				8ED919381F3AE26600DCBD0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				8ED919371F3AE26600DCBD0F /* HqTLVParse.app */,
+				1593B3B322042E8A00626F4F /* HqTLVParseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +119,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1593B3B222042E8A00626F4F /* HqTLVParseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1593B3BA22042E8A00626F4F /* Build configuration list for PBXNativeTarget "HqTLVParseTests" */;
+			buildPhases = (
+				1593B3AF22042E8A00626F4F /* Sources */,
+				1593B3B022042E8A00626F4F /* Frameworks */,
+				1593B3B122042E8A00626F4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1593B3B922042E8A00626F4F /* PBXTargetDependency */,
+			);
+			name = HqTLVParseTests;
+			productName = HqTLVParseTests;
+			productReference = 1593B3B322042E8A00626F4F /* HqTLVParseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8ED919361F3AE26600DCBD0F /* HqTLVParse */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ED9194E1F3AE26600DCBD0F /* Build configuration list for PBXNativeTarget "HqTLVParse" */;
@@ -113,6 +163,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = macpro;
 				TargetAttributes = {
+					1593B3B222042E8A00626F4F = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8ED919361F3AE26600DCBD0F;
+					};
 					8ED919361F3AE26600DCBD0F = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 7V926B465U;
@@ -134,11 +189,19 @@
 			projectRoot = "";
 			targets = (
 				8ED919361F3AE26600DCBD0F /* HqTLVParse */,
+				1593B3B222042E8A00626F4F /* HqTLVParseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1593B3B122042E8A00626F4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8ED919351F3AE26600DCBD0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +215,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1593B3AF22042E8A00626F4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1593B3B622042E8A00626F4F /* HqTLVParseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8ED919331F3AE26600DCBD0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +235,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1593B3B922042E8A00626F4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ED919361F3AE26600DCBD0F /* HqTLVParse */;
+			targetProxy = 1593B3B822042E8A00626F4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8ED919431F3AE26600DCBD0F /* Main.storyboard */ = {
@@ -185,6 +264,65 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1593B3BB22042E8A00626F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HqTLVParseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hqq.com.HqTLVParseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HqTLVParse.app/HqTLVParse";
+			};
+			name = Debug;
+		};
+		1593B3BC22042E8A00626F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HqTLVParseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hqq.com.HqTLVParseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HqTLVParse.app/HqTLVParse";
+			};
+			name = Release;
+		};
 		8ED9194C1F3AE26600DCBD0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -306,6 +444,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1593B3BA22042E8A00626F4F /* Build configuration list for PBXNativeTarget "HqTLVParseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1593B3BB22042E8A00626F4F /* Debug */,
+				1593B3BC22042E8A00626F4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8ED919321F3AE26600DCBD0F /* Build configuration list for PBXProject "HqTLVParse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
